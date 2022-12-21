@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Formation of Circle Rotation</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-image: url("ka.jfif");
+             /* background-repeat: no-repeat; */
+            /* background-size: cover;  */
+        }
+
+        .box {
+            width: 400px;
+            /* border: 1px solid cyan; */
+            /* animation: circle1 2s linear infinite; */
+            /* animation: circle2 2s linear infinite; */
+            /* animation: circle3 2s linear infinite; */
+            /* animation: circle4 2s linear infinite; */
+            /* animation: circle5 2s linear infinite; */
+            /* animation: circle6 2s linear infinite; */
+            /* animation: circle7 2s linear infinite; */
+            /* animation: circle8 2s linear infinite; */
+        }
+
+        .box2 {
+            width: 400px;
+            /* animation: circle9 3s linear infinite; */
+            /* animation: circle10 3s linear infinite; */
+            /* animation: circle11 3s linear infinite; */
+            /* animation: circle12 3s linear infinite; */
+            /* animation: circle13 3s linear infinite; */
+            /* animation: circle14 3s linear infinite; */
+            /* animation: circle15 3s linear infinite; */
+        }
+
+        .circle1 {
+            position: relative;
+            margin-top: 0px;
+            top: 100px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle1 3s linear infinite;
+        }
+
+        .circle2 {
+            position: relative;
+            margin-top: 0px;
+            top: 550px;
+            right: 390px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle2 3s linear infinite;
+        }
+
+        .circle3 {
+            position: relative;
+            margin-top: 0px;
+            left: 550px;
+            top: 50px;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle3 5s linear infinite 1s both ;
+        }
+
+        .circle4 {
+            position: relative;
+            margin-top: 0px;
+            left: 320px;
+            top: 160px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle4 4s linear infinite;
+        }
+
+        .circle5 {
+            position: relative;
+            margin-top: 0px;
+            left: 250px;
+            bottom: 250px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle5 4s linear infinite;
+        }
+
+        .circle6 {
+            position: relative;
+            margin-top: 0px;
+            left: 980px;
+            top: 120px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle6 4s linear infinite;
+        }
+
+        .circle7 {
+            position: relative;
+            margin-top: 0px;
+            right: 350px;
+            bottom: 150px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle7 4s linear infinite;
+        }
+
+        .circle8 {
+            position: relative;
+            margin-top: 0px;
+            left: 850px;
+            bottom: 550px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("love.jfif");
+            background-size: cover;
+            animation: circle8 4s linear infinite;
+        }
+
+        .circle9 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle9 3s linear infinite;
+        }
+
+        .circle10 {
+            position: relative;
+            margin-top: 0px;
+            right: 350px;
+            top: 500px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle10 2s linear infinite;
+
+        }
+
+        .circle11 {
+            position: relative;
+            margin-top: 0px;
+            right: 380px;
+            top: 330;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle11 3s linear infinite;
+
+        }
+
+        .circle12 {
+            position: relative;
+            margin-top: 0px;
+            left: 250px;
+            top: 250px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle12 3s linear infinite;
+        }
+
+        .circle13 {
+            position: relative;
+            margin-top: 0px;
+            left: 650px;
+            bottom: 380px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle13 3s linear infinite;
+        }
+
+        .circle14 {
+            position: relative;
+            margin-top: 0px;
+            right: 650px;
+            bottom: 450px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle14 3s linear infinite;
+        }
+
+        .circle15 {
+            position: relative;
+            margin-top: 0px;
+            left: 550px;
+            bottom: 250px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-image: url("uu.jfif");
+            animation: circle15 4s linear infinite;
+        }
+
+        @keyframes circle1 {
+            0% {}
+
+            50% {}
+
+            100% {
+                transform: rotate(-360deg) scale(2);
+            }
+
+        }
+
+        @keyframes circle2 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle3 {
+            0% {}
+            25%{
+                position: relative;
+                right:800px;
+            }
+            50%{
+                width:50px;
+            }
+            75%{
+
+            }
+
+            100% {
+                transform:  rotate(20deg) skewx(-180deg) scale(2);
+            }
+
+        }
+
+        @keyframes circle4 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle5 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg) skew(-40deg) scale(1);
+            }
+
+        }
+
+        @keyframes circle6 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle7 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle8 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle9 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle10 {
+            0% {}
+            
+            50%{
+                width:50px;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(4);
+            }
+
+        }
+
+        @keyframes circle11 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle12 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle13 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle14 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes circle15 {
+            0% {}
+
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+        <div class="circle7"></div>
+        <div class="circle8"></div>
+    </div>
+    <div class="box2">
+        <div class="circle9"></div>
+        <div class="circle10"></div>
+        <div class="circle11"></div>
+        <div class="circle12"></div>
+        <div class="circle13"></div>
+        <div class="circle14"></div>
+        <div class="circle15"></div>
+    </div>
+
+</body>
+
+</html>
